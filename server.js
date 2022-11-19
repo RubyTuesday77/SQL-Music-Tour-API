@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-// SEQUELIZE CONNECTION
+/* SEQUELIZE CONNECTION
 const sequelize = new Sequelize({
     storage: process.env.PG_URI,
     dialect: 'postgres',
@@ -24,6 +24,7 @@ try {
 } catch(err) {
     console.log(`Unable to connect to PG: ${err}`)
 }
+*/
 
 
 // ROOT
