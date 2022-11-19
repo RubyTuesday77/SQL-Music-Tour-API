@@ -1,5 +1,5 @@
 // DEPENDENCIES
-const { Sequelize, DataTypes, Model } = require("sequelize")
+const { Sequelize, DataTypes, Model } = require('sequelize')
 const sequelize = new Sequelize(process.env.PG_URI)
 
 // MODEL
@@ -29,8 +29,8 @@ Band.init({
     },
 }, {
     sequelize,
-    modelName: "Band",
-    tableName: "band",
+    modelName: 'Band',
+    tableName: 'band',
     timestamps: false,
 })
 
