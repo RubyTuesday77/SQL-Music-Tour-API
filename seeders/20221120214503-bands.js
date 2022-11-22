@@ -3,23 +3,18 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    await queryInterface.bulkInsert("bands", [
+      {
+        band_id: 1,
+        name: "Windmill Noise Cancer",
+        genre: "Punk",
+        available_start_time: "2023-02-23T11:00:00",
+        end_time: "2023-02-23T23:00:00",
+      }
+    ]);
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('bands', null, {});
   }
 };
