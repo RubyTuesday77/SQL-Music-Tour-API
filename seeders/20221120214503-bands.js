@@ -9,7 +9,14 @@ module.exports = {
         name: "Windmill Noise Cancer",
         genre: "Punk",
         available_start_time: "2023-02-23T11:00:00",
-        end_time: "2023-02-23T23:00:00",
+        end_time: "2023-02-23T23:00:00"
+      },
+      {
+        band_id: 2,
+        name: "They Might Be Tyrants",
+        genre: "Punk",
+        available_start_time: "2023-02-23T11:00:00",
+        end_time: "2023-02-23T23:00:00"
       }
     ]);
   },

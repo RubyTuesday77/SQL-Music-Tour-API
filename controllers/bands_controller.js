@@ -14,7 +14,7 @@ bands.get('/', async (req, res) => {
                 name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
             }
         })
-        res.status(200).json(foundBands)
+        res.status(200) .json(foundBands)
     } catch(error) {
         res.status(500).json(error)
     }
